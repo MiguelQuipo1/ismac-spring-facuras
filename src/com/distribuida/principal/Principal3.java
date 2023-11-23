@@ -8,12 +8,12 @@ import com.distribuida.entities.DetalleFactura;
 import com.distribuida.entities.Factura;
 import com.distribuida.entities.Producto;
 
-public class Principal2 {
+public class Principal3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext2.xml");
-	
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext3.xml");
+		
 		Cliente cliente = context.getBean("idCliente",Cliente.class);
 		Producto producto = context.getBean("idProducto",Producto.class);
 		Factura factura = context.getBean("idFactura",Factura.class);
