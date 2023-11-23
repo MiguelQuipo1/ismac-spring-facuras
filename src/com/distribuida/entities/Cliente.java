@@ -1,6 +1,6 @@
 package com.distribuida.entities;
 
-public class Clientes {
+public class Cliente {
 //Atributos
 	private int idCliente;
 	private int cedula;
@@ -14,9 +14,10 @@ public class Clientes {
 	
 //Constructor
 	
-	public Clientes () {
+	public Cliente () {
 		
 	}
+
 //Metodos Getter and Setter
 
 	public int getIdCliente() {
@@ -93,7 +94,7 @@ public class Clientes {
 
 	@Override
 	public String toString() {
-		return "Clientes [idCliente=" + idCliente + ", cedula=" + cedula + ", nombre=" + nombre + ", Apellido="
+		return "Cliente [idCliente=" + idCliente + ", cedula=" + cedula + ", nombre=" + nombre + ", Apellido="
 				+ Apellido + ", edad=" + edad + ", fechaNacimiento=" + fechaNacimiento + ", direccion=" + direccion
 				+ ", telefono=" + telefono + ", correo=" + correo + "]";
 	}

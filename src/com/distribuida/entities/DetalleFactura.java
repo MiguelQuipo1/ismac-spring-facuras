@@ -10,7 +10,7 @@ public class DetalleFactura {
 	
 	//Skills Class
 	
-	private Facturas factura;
+	private Factura factura;
 	private Producto producto;
 	
 	//Constructor
@@ -42,11 +42,11 @@ public class DetalleFactura {
 	public void setDetalleFactura(float detalleFactura) {
 		this.detalleFactura = detalleFactura;
 	}
-	public 	Facturas getFacturas () {
+	public 	Factura getFactura () {
 		return factura;
 	}
 	
-	public void setFacturas(Facturas factura) {
+	public void setFactura(Factura factura) {
 		this.factura = factura;
 	}
 	public 	Producto getProducto () {

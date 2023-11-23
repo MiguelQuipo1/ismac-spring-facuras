@@ -1,6 +1,6 @@
 package com.distribuida.entities;
 
-public class Facturas {
+public class Factura {
 
 	//Skills
 	private int idFactura;
@@ -9,13 +9,18 @@ public class Facturas {
 	private double iva;
 	private double total;
 	
-	private Clientes cliente; 
+	private Cliente cliente; 
 	
 	//Constructor
-	public Facturas() {
+	public Factura() {
 		
 	}
 
+	//inyector por contructor
+	public Factura(Cliente cliente) {
+	this.cliente=cliente ;
+		
+	}
 	
 	//Methods Getter and Setter
 	public int getIdFactura() {
@@ -58,18 +63,18 @@ public class Facturas {
 		this.total = total;
 	}
 
-	public 	Clientes getClientes () {
+	public 	Cliente getCliente () {
 		return cliente;
 	}
 	
-	public void setClientes(Clientes cliente) {
+	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
 
 	@Override
 	public String toString() {
 		return "Facturas [idFactura=" + idFactura + ", fecha=" + fecha + ", totalNeto=" + totalNeto + ", iva=" + iva
-				+ ", total=" + total + ", clientes=" + cliente + "]";
+				+ ", total=" + total + ", cliente=" + cliente + "]";
 	}
 	
 

@@ -10,33 +10,24 @@
 ">
  	
  	<context:component-scan base-package="com.distribuida"></context:component-scan>
- 	<context:property-placeholder location="classpath:datosEmpresa.properties"/>
+
  	
  	
- 	    <bean id="idClientes" class="com,distribuida.entities.Clientes"></bean>
+ 	    <bean id="idCliente" class="com.distribuida.entities.Cliente"></bean>
  	    
- 	    <bean id="idProductos" class="com,distribuida.entities.Produstos"></bean>
- 	    <bean id="idProductos1" class="com,distribuida.entities.Produstos"></bean>
- 	    <bean id="idProductos2" class="com,distribuida.entities.Produstos"></bean>
+ 	    <bean id="idProducto" class="com.distribuida.entities.Producto"></bean>
  	    
- 	    <bean id="idFacturas" class="com,distribuida.entities.Facturas">
- 	    <constructor-arg ref="idClientes"></constructor-arg>
+ 	    
+ 	    <bean id="idFactura" class="com.distribuida.entities.Factura">
+ 	    <constructor-arg ref="idCliente"></constructor-arg>
  	    </bean>
  	    
- 	    <bean id="idFacturasDetalle" class="com,distribuida.entities.DetalleFacturas">
- 	    <property name="producto" ref="idProductos"></property>
+ 	    <bean id="idFacturaDetalle" class="com.distribuida.entities.DetalleFactura">
+ 	    <property name="producto" ref="idProducto"></property>
  	    <property name="factura" ref="idFactura"></property>
  	    </bean>
  	    
- 	    <bean id="idFacturasDetalle2" class="com,distribuida.entities.DetalleFacturas">
- 	    <property name="producto2" ref="idProductos2"></property>
- 	    <property name="factura" ref="idFactura"></property>
- 	    </bean>
- 	    
- 	    <bean id="idFacturasDetalle3" class="com,distribuida.entities.DetalleFacturas">
- 	    <property name="producto3" ref="idProductos3"></property>
- 	    <property name="factura" ref="idFactura"></property>
- 	    </bean>
+ 	  
 
 </beans>
 
